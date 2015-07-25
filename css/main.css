@@ -1,0 +1,48 @@
+.popup-wrapper {
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.popup-wrapper > p {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.popup-wrapper > img.popup-logo {
+    min-width: 65px;
+    width: 100px;
+    padding: 0 26px;
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;
+    background-color: #2786B2;
+    border-top: 10px solid #2786B2;
+}
+
+.popup-wrapper > p > span {
+    font-family: monospace;
+    font-weight: 600;
+    background-color: #eee;
+    padding: 2px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.popup-wrapper > h2 {
+    color: #1c1c1c;
+}
+
+.popup-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 11px;
+    text-align: right;
+}
+.ddgo-small-logo{
+	width: 16px;
+    position: relative;
+    top: 4px;
+    border-radius: 2px;
+}

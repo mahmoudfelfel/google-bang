@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "google bang",
+    "description": "Add duckduckgo bang feature to google search.",
+    "version": "0.0.1",
+    "omnibox": {
+        "keyword": "!"
+    },
+    "icons": {
+        "16": "./images/bang-icon.png"
+    },
+
+    "page_action": {
+        "default_icon": "./images/bang-icon.png",
+        "default_title": "google bang",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["./js/eventPage.js"],
+        "persistance": false
+    },
+    "content_scripts": [{
+        "matches": ["https://www.google.com/*"],
+        "matches": ["*://*/*"],
+        "include_globs": ["*://www.google.*/*"],
+        "js": ["./js/gbang_cs.js"],
+        "css": ["./css/bang.css"],
+        "run_at": "document_end"
+    }],
+    "permissions": [
+        "tabs",
+        "https://www.google.com/*",
+        "https://*.duckduckgo.com/*"
+    ]
+}
