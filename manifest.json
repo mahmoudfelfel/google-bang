@@ -3,12 +3,12 @@
     "name": "google bang",
     "description": "Add duckduckgo bang feature to google search.",
     "version": "0.0.1",
-    "omnibox": {
-        "keyword": "!"
-    },
-    "icons": {
-        "16": "./images/bang-icon.png"
-    },
+    // "omnibox": {
+    //     "keyword": "!"
+    // },
+    // "icons": {
+    //     "16": "./images/bang-icon.png"
+    // },
 
     "page_action": {
         "default_icon": "./images/bang-icon.png",
