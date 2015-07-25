@@ -9,7 +9,7 @@ chrome.runtime.sendMessage({ action: "show"});
 		selectors : {
 			searchBox : document.getElementById("lst-ib"),
 			autoCompleteBox: document.querySelectorAll("#sbtc > div.gstl_0.sbdd_a")[0],
-			searchResultsContainer: document.getElementById("cnt")
+			searchResultsContainer: document.getElementById("main")
 		},
 		states : {
 			gsActivated: true,
@@ -37,7 +37,7 @@ chrome.runtime.sendMessage({ action: "show"});
 		},
 		watchSerachBox : function(){
 			var bangSearchBox = document.getElementById("bang-search-box");
-			var searchResultsContainer = document.getElementById("cnt");
+			var searchResultsContainer = document.getElementById("main");
 			
 			// check initial value
 			if(this.selectors.searchBox.value){
@@ -119,7 +119,7 @@ chrome.runtime.sendMessage({ action: "show"});
 				document.getElementById("bang-ac").style.display = "none";
 				document.getElementById("bang-search-submit").style.display = "none";
 			}
-			if (document.getElementById("cnt") && document.getElementById("cnt").style.display === "none" ) document.getElementById("cnt").style.display = "block";
+			if (document.getElementById("main") && document.getElementById("main").style.display === "none" ) document.getElementById("main").style.display = "block";
 			document.querySelector("#sblsbb > button:first-child").style.display = "block";
 			this.selectors.searchBox.style.display = "block";
 			this.selectors.searchBox.focus();
@@ -188,6 +188,7 @@ chrome.runtime.sendMessage({ action: "show"});
 			xhr.send();
 		},
 		getBangLink: function(queryText){
+			if (document.getElementById("main") && document.getElementById("main").style.display === "block" ) document.getElementById("main").style.display = "none";
 			this.toggleLoader(true);
 			var xhr = new XMLHttpRequest();
 			xhr.open("GET", "https://api.duckduckgo.com/?format=json&no_redirect=1&q=" + queryText, true);
