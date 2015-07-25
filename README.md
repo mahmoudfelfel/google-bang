@@ -16,7 +16,13 @@ What are bangs?
 <br>With !bang autocomplete, it's even easier than ever to search directly on your favorite sites.
 
 ----------
+Demo
+----
+<iframe width="420" height="315" src="https://www.youtube.com/embed/CMyf1fUMv9w" frameborder="0" allowfullscreen>https://www.youtube.com/embed/CMyf1fUMv9w</iframe>
 
+Installation
+-------------
+It is not yet on chrome web store, but if you want to try it now, <a href="https://dl.dropboxusercontent.com/u/37262502/google-bang.crx">download this .crx file</a>, then open your `chrome://extensions/` page and drag that file into it.
 
 TODO
 -------------
